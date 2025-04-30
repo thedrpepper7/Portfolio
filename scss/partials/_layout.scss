@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    display: flex;
+    min-height: 100vh;
+}
+
+.nav {
+    min-width: 20%;
+}
+
+.content {
+    min-width: 80%;
+    min-height: 100vh;
+}
