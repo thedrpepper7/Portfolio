@@ -1,9 +1,23 @@
-.portimg {
-    background-image: url(../img/portfolioimg.jpg);
-    width: 80vw;
-    height: 40vh;
+.nameintro {
+    position: relative;
+    height: 600px;
+    width: 80vw; 
+    background-image: url('../img/portfolioimg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
+    display: flex; 
+    flex-direction: column;
+    line-height: 4rem;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
 }
+
+
+#name {
+    color:red;
+    font-size: 4rem;
+}
+
+
 
