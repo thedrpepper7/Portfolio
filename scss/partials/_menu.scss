@@ -19,18 +19,34 @@
     line-height: 3.5rem;
 }
 
-#socialmedia {
-    padding-top:100px;
+// github and linkedin icons
+
+#socialmedias {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap:15px;
+    & a {
+        text-decoration: none;
+        color:aqua;
+        font-size: 1.5rem;
+    }
 }
 
-#socialmedia::before {
-    content: "\ea90\ea92\ea96\eac9";
-    letter-spacing: 1.2rem;
-    color:aqua;
+.github::after {
+    content: "\eab0";
 }
 
+.linkedin::after {
+    content: "\eac9";
+}
 
 .about {
     text-decoration: none;
     color:black;
+}
+
+#aboutselect, #portfolioselect, #codingexamplesselect, #scsschemeselect, #contactmeselect {
+    border-top:aqua 2px solid;
+    border-bottom:aqua 2px solid;
 }

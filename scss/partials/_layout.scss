@@ -23,6 +23,7 @@
 .wrap {
     display: flex;
     min-height: 100vh;
+    max-height: 600px;
 }
 
 .nav {
@@ -33,4 +34,18 @@
 .content {
     min-width: 80%;
     min-height: 100vh;
+}
+
+@media (max-width:576px) {
+    .initials {
+        font-size:3.5rem;
+    }
+
+    .navigation {
+        font-size: small;
+    }
+
+    #socialmedia {
+        font-size: small;
+    }
 }
