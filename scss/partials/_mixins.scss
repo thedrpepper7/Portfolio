@@ -1,0 +1,16 @@
+// content photo 
+
+@mixin background($photo) {
+    position: relative;
+    height: 600px;
+    width: 80vw; 
+    background-image: url(#{$photo});
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column;
+    line-height: 4rem;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}

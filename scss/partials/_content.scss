@@ -1,17 +1,10 @@
+@import "mixins.scss";
+
+// main page
+
 .nameintro {
-    position: relative;
-    height: 600px;
-    width: 80vw; 
-    background-image: url('../img/portfolioimg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex; 
-    flex-direction: column;
-    line-height: 4rem;
-    justify-content: center;
-    align-items: center; 
-    text-align: center; 
-}
+    @include background('../img/portfolioimg.jpg');
+  }
 
 
 #name {
@@ -19,5 +12,33 @@
     font-size: 4rem;
 }
 
+// about me 
 
+.aboutintro {
+    @include background('../img/aboutimg.jpg');
+}
+
+// my portfolio 
+
+.portfoliointro {
+    @include background('../img/myportfolio.jpg');
+}
+
+//coding examples 
+
+.codingexamplesintro {
+    @include background('../img/codingexamples.jpg');
+}
+
+// scss scheme
+
+.schemeintro {
+    @include background('../img/scheme.jpg');
+}
+
+// contact 
+
+.contactintro {
+    @include background('../img/contact.jpg');
+}
 
