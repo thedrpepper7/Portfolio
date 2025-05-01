@@ -1,3 +1,8 @@
+html {
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -27,18 +32,22 @@
 }
 
 .nav {
-    min-width: 20%;
-    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 20vw;
+    height: auto;
 }
 
 .content {
-    min-width: 80%;
-    min-height: 100vh;
+    width: 80vw;;
+    height: 50vh;
 }
+
+// content resizing
 
 @media (max-width:576px) {
     .initials {
-        font-size:3.5rem;
+        font-size:2rem;
     }
 
     .navigation {
@@ -58,8 +67,57 @@
         font-size: 1.5rem;
     }
      
+}
 
+// grid resizing 
 
+@media (max-width: 768px) {
+    #block3 {
+        grid-template-columns: 1fr;
+        #message {
+            grid-row: 5 / 6;
+        }
+    }
+
+    #contactgrid {
+        padding:20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #contactgrid {
+        gap:5px;
+        padding:5px;
+        font-size: x-small;
+    }
 }
 
 
+@media (max-width: 576px) {
+    #contactgrid {
+        grid-template-columns: 1fr;  
+        padding: 10px; 
+        gap: 10px;  
+    }
+
+    #block1, #block2 {
+        grid-column: 1; 
+    }
+
+    #block3 {
+        grid-column: 1;
+        grid-row: 3; 
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    input, textarea {
+        margin-bottom: 10px;
+    }
+
+    .contactintro, .aboutintro, .portfoliointro, .schemeintro, .codingexamplesintro {
+        height: 30vh;
+    }
+}

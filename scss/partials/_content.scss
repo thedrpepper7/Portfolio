@@ -27,7 +27,6 @@
 
 .aboutintro {
     @include background('../img/aboutimg.jpg');
-    background-position: center;
 }
 
 #aboutme {
@@ -48,6 +47,7 @@
 
 .codingexamplesintro {
     @include background('../img/codingexamples.jpg');
+    background-position: center 30%;
 }
 
 #codingexamples {
@@ -55,13 +55,13 @@
     & + p {
         color:red;
     }
-
 }
 
 // scss scheme
 
 .schemeintro {
     @include background('../img/scheme.jpg');
+    background-position: center 30%;
 }
 
 #scss {
@@ -72,10 +72,60 @@
 
 .contactintro {
     @include background('../img/contactme.jpg');
-    background-position: center;
+    background-position: center 40%;
 }
 
 #contact {
     color:$azureblue;
 
 }
+
+#contactgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:40px;
+    gap:40px;
+    line-height: 2rem;
+    max-width: 100%;
+    & textarea {
+        resize: none;
+    }
+}
+
+#block1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#block2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#block3 {
+    display: grid;
+    gap:10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;    
+}
+
+#subject, #emailaddress, #message, #firstname, #lastname {
+    background-color:#fcfeff;
+}
+
+#subject {
+    grid-column: 1 / -1;
+    grid-row: 3 / 3;
+}
+
+#emailaddress {
+    grid-column: 1 / -1;
+}
+
+#message {
+    grid-column: 1 / -1;
+    grid-row: 4 / 6;
+}
+

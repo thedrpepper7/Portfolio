@@ -19,8 +19,9 @@ $azureblue : #007FFF;
 
 @mixin background($photo) {
     position: relative;
-    height: 600px;
+    height: 50vh;
     width: 80vw; 
+    background-position: center;
     background-image: url(#{$photo});
     background-size:cover;
     background-repeat: no-repeat;
