@@ -1,7 +1,9 @@
+@import 'mixins.scss';
+
 .initials {
     font-size: 7rem;
     width: 100%;
-    border-bottom: aqua 2px solid;
+    border-bottom: $mintgreen 2px solid;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -10,7 +12,7 @@
 
 .nav {
     text-align: center;
-    border-right: aqua 2px solid;
+    border-right: $mintgreen 2px solid;
     height: 600px;
 }
 
@@ -29,7 +31,7 @@
     font-size: 1.5rem;
     & a {
         text-decoration: none;
-        color:aqua;
+        color:$mintgreen;
     }
 }
 
@@ -47,6 +49,6 @@
 }
 
 #aboutselect, #portfolioselect, #codingexamplesselect, #scsschemeselect, #contactmeselect {
-    border-top:aqua 2px solid;
-    border-bottom:aqua 2px solid;
+    border-top:$mintgreen 2px solid;
+    border-bottom:$mintgreen 2px solid;
 }

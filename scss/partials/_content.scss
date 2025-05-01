@@ -1,21 +1,37 @@
 @import "mixins.scss";
 
+// all main text
+
+#name, #aboutme, #portfolio, #codingexamples, #scss, #contact {
+    font-size: 3rem;
+}
+
+
 // main page
 
 .nameintro {
-    @include background('../img/portfolioimg.jpg');
+    @include background('../img/intro.jpg');
+    height: 100vh;
   }
 
 
 #name {
-    color:orange;
-    font-size: 3rem;
+    color:$brightolive;
+    & + p {
+        color: #F4F1D3;
+
+    }
 }
 
 // about me 
 
 .aboutintro {
     @include background('../img/aboutimg.jpg');
+    background-position: center;
+}
+
+#aboutme {
+    color:$brightcyan;
 }
 
 // my portfolio 
@@ -24,10 +40,22 @@
     @include background('../img/myportfolio.jpg');
 }
 
+#portfolio {
+    color:$warmorange;
+}
+
 //coding examples 
 
 .codingexamplesintro {
     @include background('../img/codingexamples.jpg');
+}
+
+#codingexamples {
+    color:$electricblue;
+    & + p {
+        color:red;
+    }
+
 }
 
 // scss scheme
@@ -36,9 +64,18 @@
     @include background('../img/scheme.jpg');
 }
 
+#scss {
+    color:$creamwhite;
+}
+
 // contact 
 
 .contactintro {
-    @include background('../img/contact.jpg');
+    @include background('../img/contactme.jpg');
+    background-position: center;
 }
 
+#contact {
+    color:$azureblue;
+
+}

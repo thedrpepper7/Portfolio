@@ -1,3 +1,20 @@
+// variables 
+
+$mintgreen : #1fe0aa;
+
+$brightolive : #7A9A6D;
+$brightcyan : #00FFFF;
+$warmorange : #FF5722;
+$electricblue : #2979FF;
+$creamwhite : #FFF5E1;
+$azureblue : #007FFF;
+
+
+
+
+
+
+
 // content photo 
 
 @mixin background($photo) {
@@ -5,7 +22,7 @@
     height: 600px;
     width: 80vw; 
     background-image: url(#{$photo});
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     display: flex; 
     flex-direction: column;
