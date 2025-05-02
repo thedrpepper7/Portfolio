@@ -27,6 +27,7 @@
 
 .aboutintro {
     @include background('../img/aboutimg.jpg');
+    background-position: center 20%;
 }
 
 #aboutme {
@@ -57,6 +58,12 @@
     }
 }
 
+#coding {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
 // scss scheme
 
 .schemeintro {
@@ -66,6 +73,32 @@
 
 #scss {
     color:$creamwhite;
+}
+
+#scssflex {
+    display: flex;
+    padding:40px;
+    flex-wrap: wrap;
+
+    & p {
+        margin-right: 20px;
+    }
+    & p:nth-child(1) {
+        color:red;
+        flex-basis: 45%;
+    }
+
+    & p:nth-child(2) {
+        color:orange;
+        flex-basis: 45%;
+    }
+
+    & p:nth-child(3) {
+        color:purple;
+        padding-top: 40px;
+        white-space: pre-line;
+        flex-basis: 100%;
+    }
 }
 
 // contact 

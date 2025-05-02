@@ -1,13 +1,11 @@
-html {
-    max-height: 100vh;
-    box-sizing: border-box;
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
+.icomoon {
+    font-family: 'icomoon', sans-serif;
+}
 
 .initialslink {
     text-decoration: none;
@@ -21,47 +19,49 @@ html {
     font-style: normal;
   }
 
-.icomoon {
-    font-family: 'icomoon', sans-serif;
-}
 
 .wrap {
     display: flex;
     min-height: 100vh;
-    max-height: 600px;
 }
 
 .nav {
     position: sticky;
-    top: 0;
+    top:0;   
     width: 20vw;
-    height: auto;
+    height: 100vh;
+   
 }
 
 .content {
     width: 80vw;;
-    height: 50vh;
+    height: 100%;
 }
 
-// content resizing
+// menu resizing
 
 @media (max-width:576px) {
+    
+    // LG
+
     .initials {
         font-size:2rem;
     }
 
-    .navigation {
-        font-size: small;
-    }
-
-    #socialmedias {
-        font-size: 1rem;
-    }
+    // about me - github/linkedin icons
 
     .navigation {
         line-height: 2rem;
         font-size: x-small;
     }
+
+    // icons
+
+    #socialmedias {
+        font-size: 1rem;
+    }
+
+    // header resizer
 
     #name, #aboutme, #portfolio, #codingexamples, #scss, #contact {
         font-size: 1.5rem;
@@ -69,20 +69,38 @@ html {
      
 }
 
-// grid resizing 
 
-@media (max-width: 768px) {
-    #block3 {
-        grid-template-columns: 1fr;
-        #message {
-            grid-row: 5 / 6;
+// flex resizing for scss 
+
+@media (min-width:280px) and (max-width:600px) {
+    #scssflex {
+        padding:20px;
+        font-size: small;
+        & p:nth-child(1) {
+            flex-basis: 100%;
+            padding-top: 5px;
+        }
+
+        & p:nth-child(2) {
+            flex-basis: 100%;
+            padding-top: 5px;
+        }
+
+        & p:nth-child(3) {
+            flex-basis: 100%;
+            padding-top:5px;
         }
     }
 
-    #contactgrid {
-        padding:20px;
+}
+
+@media (max-width:992px) {
+    #scssflex {
+        font-size: small;
     }
 }
+
+// grid resizing for contact me
 
 @media (max-width: 576px) {
     #contactgrid {
@@ -90,10 +108,12 @@ html {
         padding:5px;
         font-size: x-small;
     }
+
+    
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     #contactgrid {
         grid-template-columns: 1fr;  
         padding: 10px; 
@@ -117,7 +137,14 @@ html {
         margin-bottom: 10px;
     }
 
-    .contactintro, .aboutintro, .portfoliointro, .schemeintro, .codingexamplesintro {
-        height: 30vh;
+    #block3 {
+        grid-template-columns: 1fr;
+        #message {
+            grid-row: 5 / 6;
+        }
+    }
+
+    #contactgrid {
+        padding:20px;
     }
 }
