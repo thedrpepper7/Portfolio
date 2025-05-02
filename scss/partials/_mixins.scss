@@ -33,5 +33,13 @@ $azureblue : #007FFF;
     text-align: center; 
 }
 
-// menu currently on 
+// portfolio image corrector
+
+@mixin imgcorrector {
+    height: auto;
+    z-index: -1;
+    width: auto;
+    align-items: end;
+    justify-content: end;
+}
 
