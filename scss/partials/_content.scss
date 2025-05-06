@@ -66,7 +66,6 @@
 .project {
     border: 1px black solid;
     color:black;
-    background-color:#a16dea;
 }
 
 #project1 {
@@ -148,17 +147,14 @@
         white-space: pre-line;
     }
     & p:nth-child(1) {
-        color:red;
         flex-basis: 45%;
     }
 
     & p:nth-child(2) {
-        color:orange;
         flex-basis: 45%;
     }
 
     & p:nth-child(3) {
-        color:purple;
         padding-top: 40px;
         flex-basis: 100%;
     }
