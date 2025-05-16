@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-.nav {
+.nav, .open{
     text-align: center;
     border-right: $mintgreen 2px solid;
 }
@@ -75,6 +75,5 @@
         top: 0;
         left: 0;
         background-color: grey;
-        
     }
 }
