@@ -140,7 +140,7 @@
     padding:40px;
     min-width: 50%;
     flex-wrap: wrap;
-    font-size: large;
+    font-size: 1.5rem;
 
     & p {
         margin-right: 20px;
@@ -186,11 +186,13 @@
 #block1 {
     grid-column: 1;
     grid-row: 1;
+    line-height: 2em;
 }
 
 #block2 {
     grid-column: 1;
     grid-row: 2;
+    line-height: 2em;
 }
 
 #block3 {
@@ -224,3 +226,16 @@
     grid-row: 4 / 6;
 }
 
+#submitcontact {
+    grid-column: 1 / -1;
+}
+
+
+// js conversion for contact info 
+
+.noName {
+    border: red 2px solid;
+    &:focus {
+        outline: none;
+    }
+}
