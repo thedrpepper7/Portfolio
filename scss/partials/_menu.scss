@@ -53,3 +53,28 @@
     border-top:$mintgreen 2px solid;
     border-bottom:$mintgreen 2px solid;
 }
+
+
+// burger button 
+
+.burgerbutton {
+    display: none;
+    width: 45px;
+    height: 40px;
+    border: $mintgreen 1px solid;
+    &::after {
+        content: "\e9bd";
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 768px) {
+    .burgerbutton {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: grey;
+        
+    }
+}

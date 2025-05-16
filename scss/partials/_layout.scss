@@ -142,39 +142,47 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #contactgrid {
         grid-template-columns: 1fr;  
-        padding: 10px; 
+        padding: 15px; 
         gap: 10px;  
     }
 
     #block1, #block2 {
-        grid-column: 1; 
+        grid-column: 1;
+        max-height: 100px; 
     }
 
     #block3 {
         grid-column: 1;
         grid-row: 3; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto 100px;
+    
     }
+
+    
+    #message {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+}
+
 
     input, textarea {
         width: 100%;
+        margin-bottom: 5px;
     }
 
-    input, textarea {
-        margin-bottom: 10px;
-    }
 
-    #block3 {
-        grid-template-columns: 1fr;
-        #message {
-            grid-row: 5 / 6;
-        }
-    }
-
-    #contactgrid {
-        padding:20px;
-    }
 }
 
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .nameintro, .aboutintro, .portfoliointro, .codingexamplesintro, .contactintro, .schemeintro {
+        width: 100vw;
+    }
+}
