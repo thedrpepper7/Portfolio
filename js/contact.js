@@ -25,3 +25,10 @@ submit.addEventListener('click', ()=> {
         message.placeholder = "Required Message*"
     } else message.className = '';
 })
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+
