@@ -1,7 +1,7 @@
 @import 'mixins.scss';
 
 .initials {
-    font-size: 7rem;
+    font-size: 5rem;
     width: 100%;
     border-bottom: $mintgreen 2px solid;
     font-family: "Roboto Condensed", sans-serif;
@@ -13,7 +13,7 @@
 .nav, .open{
     text-align: center;
     border-right: $mintgreen 2px solid;
-    background-color: #6E6E6E;
+    background-color: #f0f0f0;
 }
 
 .navigation {
