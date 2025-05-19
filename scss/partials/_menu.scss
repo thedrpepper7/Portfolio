@@ -13,6 +13,7 @@
 .nav, .open{
     text-align: center;
     border-right: $mintgreen 2px solid;
+    background-color: #6E6E6E;
 }
 
 .navigation {
@@ -61,7 +62,7 @@
     display: none;
     width: 45px;
     height: 40px;
-    border: $mintgreen 1px solid;
+    box-shadow: inset 2px red;
     &::after {
         content: "\e9bd";
         font-size: x-large;

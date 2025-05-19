@@ -24,7 +24,7 @@
 }
 
 
-
+// components of page (left is .nav right is .wrap and .content)
 
 .wrap {
     display: flex;
@@ -49,6 +49,12 @@
 #aboutflex, #contactgrid, #scssflex, #codingflex{
     height: 50%;
     min-height: 50vh;
+}
+
+// image size covering 90vw
+
+.contactintro {
+    width: 90vw;
 }
 
 // menu resizing
