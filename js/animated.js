@@ -1,9 +1,3 @@
-// const leongrant = document.querySelector("#name").textContent;
-
-// for (let i=0; i < leongrant.length; i++){
-//    (leongrant[i]).fadeIn(2000);
-// }
-
 function animateHeader(id){
 
     const letters = document.querySelectorAll(`#${id} span`);
@@ -14,7 +8,7 @@ function animateHeader(id){
 
     setTimeout(() => {
         span.style.opacity = "1";
-    }, index * 100); // 100ms delay between each
+    }, index * 100); 
     })
 
 };
@@ -22,4 +16,3 @@ function animateHeader(id){
 
 // Leon Grant
 animateHeader("name");
-// Contact Me

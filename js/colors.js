@@ -1,9 +1,12 @@
+//selecting all boxes
 const snippets = document.querySelectorAll('.example');
-const random = Math.random()
-const colorbutton = document.querySelector('.colorchange');
+//color reset button
+const resetbtn = document.querySelector('#colorreset');
+//change colors
+const colorbutton = document.querySelector('#changecolor');
 
 function randomnumrgb() {
-   let randomnum = Math.floor(Math.random() * 265);
+   let randomnum = Math.floor(Math.random() * 256);
    return randomnum;
 }
 
@@ -11,7 +14,7 @@ function randomcolor() {
     let val1 = randomnumrgb();
     let val2 = randomnumrgb();
     let val3 = randomnumrgb();
-    let val4 = randomnumrgb();
+    let val4 = 0.9;
     
     const backgroundcolor = `rgba(${val1}, ${val2}, ${val3}, ${val4})`;
     return (backgroundcolor);
@@ -23,4 +26,10 @@ colorbutton.addEventListener('click', ()=> {
     i.style.backgroundColor = coloring;
 }
 
+});
+
+resetbtn.addEventListener('click', () => {
+    for (let i of snippets) {
+        i.style.backgroundColor = 'white';
+    }
 });

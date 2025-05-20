@@ -1,6 +1,5 @@
 const menubutton = document.querySelector('.burgerbutton');
 const menu = document.querySelector('.nav')
-console.log(menubutton);
 
 menubutton.addEventListener('click', () => {
     if (menu.style.display === "block"){
