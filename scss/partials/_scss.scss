@@ -1,0 +1,33 @@
+.schemeintro {
+    @include background('../img/scheme.jpg');
+    background-position: center 30%;
+}
+
+#scss {
+    color:$creamwhite;
+}
+
+#scssflex {
+    display: flex;
+    padding:40px;
+    min-width: 50%;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+
+    & p {
+        margin-right: 20px;
+        white-space: pre-line;
+    }
+    & p:nth-child(1) {
+        flex-basis: 45%;
+    }
+
+    & p:nth-child(2) {
+        flex-basis: 45%;
+    }
+
+    & p:nth-child(3) {
+        padding-top: 40px;
+        flex-basis: 100%;
+    }
+}

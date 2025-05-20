@@ -1,0 +1,53 @@
+.portfoliointro {
+    @include background('../img/myportfolio.jpg');
+}
+
+#portfolio {
+    color:$warmorange;
+}
+
+#portfoliogrid {
+    display: grid;
+    padding: 40px;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+    & span {
+        transform: translate(-10px);
+    }
+}
+
+.project {
+    border: 1px black solid;
+    color:black;
+}
+
+#project1 {
+    @include background('../img/GitHub-logo.png');
+    @include imgcorrector;
+}
+
+#project2 {
+    @include background('../img/GitHub-logo.png');
+    @include imgcorrector;
+}
+
+#project3 {
+    @include background('../img/GitHub-logo.png');
+    @include imgcorrector;
+}
+
+#project4 {
+    @include background('../img/GitHub-logo.png');
+    @include imgcorrector;
+}
+
+#project5 {
+    @include background('../img/GitHub-logo.png');
+    @include imgcorrector;
+}
+
+#project6 {
+    @include background('../img/GitHub-logo.png');
+    @include imgcorrector;
+}

@@ -1,0 +1,16 @@
+.aboutintro {
+    @include background('../img/aboutimg.jpg');
+    background-position: center 20%;
+}
+
+#aboutflex {
+    display: flex;
+    padding:40px;
+    font-size:1.5rem;
+    justify-content: center;
+    align-items: center 15%;
+}
+
+#aboutme {
+    color:$brightcyan;
+}
