@@ -118,16 +118,34 @@
     }
 }
 
-#codingflex {
+#codingexamplegrid {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
-#coding {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+#codesnippets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-auto-rows: 50px;
+    align-items: center;
+    gap:20px;
+    padding:20px;
+    & p {
+        border: black 1px solid;
+        padding: 10px;
+        height:  auto;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: wrap;
+    }
 }
+
+.color {
+    background-color: red;
+}
+
 
 // scss scheme
 
