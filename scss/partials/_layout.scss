@@ -169,8 +169,55 @@
     .nav {
         display: none;
     }
-    .nameintro, .aboutintro, .portfoliointro, .codingexamplesintro, .contactintro, .schemeintro {
+    .nameintro, .aboutintro, .portfoliointro, .codingexamplesintro, .contactintro, .schemeintro, #codingexamplegrid {
         width: 100vw;
+    }
+}
+
+// resizing the grid for coding examples
+
+@media (max-width:1200px ) {
+    #codingexamplegrid {
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+
+    #codeselect {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: small;
+        width: 75%;
+    }
+    #codeimage {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        background-size:contain;
+
+    }
+    #codedescription {
+        grid-row: 3;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #codeselect {
+        grid-template-columns: 1fr 1fr;
+        gap:5px;
+        padding:5px;
+        place-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #codeselect {
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin: 0 auto;
+    }
+    #codingexamplegrid {
+        padding: 0px;
     }
 }
 

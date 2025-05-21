@@ -27,26 +27,47 @@ function find(id){
 
 
 const animatedtext = {
-    html:       [`img/animatedtexthtml.png`, `how i made the html`,],
-    javascript: [`img/animatedtextjs.png`,`How i made the js`,],
+    html:       [`img/animatedtexthtml.png`, 
+                `The HTML was quite simple, adding <span> tags to each letter allowing seperate animation 
+                resulting in looking like a wave as each letter fades in.`,],
+    javascript: [`img/animatedtextjs.png`,
+                `The JavaScript, also quite simple having a forEach loop go through each <span> tag and setting
+                the opacity back to 1 with a delay based on the index of the current span tag`,],
 }
 
 
 const mobilemenu = {
-    css:        [`img/mobilemenucss.png`, `how i made the css`,],
-    javascript: [`img/mobilemenujs.png`, `How i made the js`,],
+    css:        [`img/mobilemenucss.png`, 
+                `The CSS to this mobile "burger" menu is first set to display:none and only becomes visible
+                (display:block) when the screen is no larger than 768px, when the display is most likely phone/tablet sized,
+                also setting the content and images to span across the whole screen replacing the missing nav
+                ensuring a less cluttered screen. Other styling features simply putting it top left in a fixed position using
+                and 'icomoon' based symbol`,],
+    javascript: [`img/mobilemenujs.png`, 
+                `The JavaScript for the mobile menu button, simply selecting the button (that only appears when the screen is small)
+                and selecting the nav (which at this point should be display:none). The button has an event listener watching for clicks
+                and upon clicking it, the button checks if the nav has "block" display or "none" display, flipping it from either condition
+                it's currently on - ensuring the menu can be toggled instead of a one way press.`,],
 }
 
 const contactmenu = {
-    html:       [`img/contactmenuhtml.png`, `how i made the html`,],
-    css:        [`img/contactmenucss.png`, `how i made the css`,],
-    javascript: [`img/contactmenujs.png`, `How i made the js`,],
+    html:       [`img/contactmenuhtml.png`, 
+                `With the HTML, setting the input tags within "contactgrid" to make into grid display with three individual "blocks" in them
+                also taking on the grid display. The placeholders will later be swapped via JavaScript depending on what is entered/not entered.
+                Lastly, a sumbit button which will be the decider on what to do to each input box`,],
+    css:        [`img/contactmenucss.png`, 
+                `Previously mentioned in the HTML description, this is setting three grids inside of the main grid to order things nicely. Media
+                queries adjusting the amount of template-colums to ensure no overflow by stacking them on top of eachother if needed.`,],
+    javascript: [`img/contactmenujs.png`, 
+                `With the JavaScript, everything is checked once the submit button is clicked. The contents get checked and if there isnt a 
+                value inside of the required fields, the placeholder is changed to display that and the boxes are highlighted red to indicate 
+                that to the user. Another interesting check is the Regex check making sure that even if an email <bold>entered</bold>, it makes
+                sure that the email is in fact valid, again, indicating with a red outline and placeholder text`,],
 }
 
 const codesnippets = {
-    html:       [`img/animatedtexthtml.png`, `how i made the html`,],
-    css:        [`img/contactme.jpg`, `how i made the css`,],
-    javascript: [`img/codesnippets.png`,`How i made the js`,],
+    html:       [`img/codingexampleshtml.png`, `how i made the html`,],
+    javascript: [`img/codingexamplesjs.png`,`How i made the js`,],
 }
 
 const colorchange = {
@@ -79,7 +100,6 @@ const cehtml = find(`codingexampleshtml`)
 const cecss = find(`codingexamplescss`);
 const cejs = find(`codingexamplesjs`);
 addImg(codesnippets, cehtml, `html`);
-addImg(codesnippets, cecss, `css`);
 addImg(codesnippets, cejs, `js`);
 
 const ccjs = find('colorchangejs');
