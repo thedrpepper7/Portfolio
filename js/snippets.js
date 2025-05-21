@@ -66,16 +66,33 @@ const contactmenu = {
 }
 
 const codesnippets = {
-    html:       [`img/codingexampleshtml.png`, `how i made the html`,],
-    javascript: [`img/codingexamplesjs.png`,`How i made the js`,],
+    html:       [`img/codingexampleshtml.png`, 
+                `For the HTML here, I have the three grid cells, the one containing the panel of buttons and two empty cells which will fill with the JavaScript, 
+                each of them having an id which will be selected for JavaScript.`,],
+    javascript: [`img/codingexamplesjs.png`,
+                `With the JavaScript, at the start I find the areas I will be updating with the content, an empty cell below for the description (this) 
+                and the cell on the right for the screenshot of the code. Then instead of writing document.querySelector for everything, I write a small 
+                function to find it based on the value (the elements id) passed. Next, I have the addImg function which has three values passed to it, the object
+                to choose from, the location of where to put the image or description and the last value, is the language the snippet is based on, running through
+                the object picking the right image relative to the button (HTML, CSS, JS) pressed.`,],
 }
 
 const colorchange = {
-    javascript: [`img/colorchange.png`, `How i made the js`,]
+    javascript: [`img/colorchange.png`, 
+                `With the colorchanging JavaScript, I select all the p element to later edit their background color, the reset button specifically to reset the coloring
+                of all the p elements and lastly I watch the color change button to run the function. After that, I have the random number multiplied by 256 and .floor function
+                applied to it to ensure a range of 1-255. In the randomcolor function, I have the randomnumber ran on three different values then just have the last value set to
+                0.9 for opacity and then returning the string rgba containing the three randomly generated numbers. Lastly the for of loop goes through every p element and assigns
+                the style.backgroundColor randomly.`,]
 }
 
 const objectupdate = {
-    javascript: [`img/objectupdate.png`, `How i made the js`,]
+    javascript: [`img/objectupdate.png`, 
+                `With the object updater, I made a template object with some information and an empty list assigned to "pets", through if statements on a prompt
+                I am able to make a while loop which asks the user to enter a pet name, ending the loop once "no" is entered. The inputted values are then placed inside of the
+                list. At the end you will notice a console.log which, depending on the number of values in the list, will output a different thing. For example one pet 
+                is simply "I have a pet called", two pets is "I have two pets x and x" and finally, anything about 2 is turned into a list with the last item being taken out
+                with pop and stored as a variable to ensure that the list ends with "and".`,]
 }
 
 

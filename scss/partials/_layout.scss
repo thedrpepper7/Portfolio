@@ -206,7 +206,10 @@
         grid-template-columns: 1fr 1fr;
         gap:5px;
         padding:5px;
-        place-items: center;
+        width: 100%;
+        & p {
+            width: 100%;
+        }
     }
 }
 
