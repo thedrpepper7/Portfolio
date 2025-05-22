@@ -1,6 +1,9 @@
 //where the image will appear
 const codeimg = document.querySelector('#codeimage');
 
+//the panel of buttons 
+const codeselect = document.querySelector('#codeselect');
+
 //description under 
 const description = document.querySelector('#codedescription');
 
@@ -16,6 +19,8 @@ function addImg(which, btn, lang) {
             codeimg.style.backgroundImage = `url(${which.javascript[0]})`;
             description.innerHTML = which.javascript[1];
         }
+        codeimg.style.paddingBottom = '0px';
+        description.style.height = 'auto';
       
     })
 }
@@ -32,7 +37,7 @@ const animatedtext = {
                 resulting in looking like a wave as each letter fades in.`,],
     javascript: [`img/animatedtextjs.png`,
                 `The JavaScript, also quite simple having a forEach loop go through each <span> tag and setting
-                the opacity back to 1 with a delay based on the index of the current span tag`,],
+                the opacity back to 1 with a delay based on the index of the current span tag.`,],
 }
 
 
@@ -42,7 +47,7 @@ const mobilemenu = {
                 (display:block) when the screen is no larger than 768px, when the display is most likely phone/tablet sized,
                 also setting the content and images to span across the whole screen replacing the missing nav
                 ensuring a less cluttered screen. Other styling features simply putting it top left in a fixed position using
-                and 'icomoon' based symbol`,],
+                and 'icomoon' based symbol.`,],
     javascript: [`img/mobilemenujs.png`, 
                 `The JavaScript for the mobile menu button, simply selecting the button (that only appears when the screen is small)
                 and selecting the nav (which at this point should be display:none). The button has an event listener watching for clicks
@@ -54,15 +59,15 @@ const contactmenu = {
     html:       [`img/contactmenuhtml.png`, 
                 `With the HTML, setting the input tags within "contactgrid" to make into grid display with three individual "blocks" in them
                 also taking on the grid display. The placeholders will later be swapped via JavaScript depending on what is entered/not entered.
-                Lastly, a sumbit button which will be the decider on what to do to each input box`,],
+                Lastly, a sumbit button which will be the decider on what to do to each input box.`,],
     css:        [`img/contactmenucss.png`, 
                 `Previously mentioned in the HTML description, this is setting three grids inside of the main grid to order things nicely. Media
                 queries adjusting the amount of template-colums to ensure no overflow by stacking them on top of eachother if needed.`,],
     javascript: [`img/contactmenujs.png`, 
                 `With the JavaScript, everything is checked once the submit button is clicked. The contents get checked and if there isnt a 
                 value inside of the required fields, the placeholder is changed to display that and the boxes are highlighted red to indicate 
-                that to the user. Another interesting check is the Regex check making sure that even if an email <bold>entered</bold>, it makes
-                sure that the email is in fact valid, again, indicating with a red outline and placeholder text`,],
+                that to the user. Another interesting check is the Regex check making sure that even if an email value is given, it has to be 
+                a valid email address, again, indicating with a red outline and placeholder text.`,],
 }
 
 const codesnippets = {

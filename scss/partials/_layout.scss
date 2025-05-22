@@ -169,7 +169,7 @@
     .nav {
         display: none;
     }
-    .nameintro, .aboutintro, .portfoliointro, .codingexamplesintro, .contactintro, .schemeintro, #codingexamplegrid {
+    .nameintro, .aboutintro, .portfoliointro, .codingexamplesintro, .contactintro, .schemeintro, #codingexamplegrid, #contactgrid {
         width: 100vw;
     }
 }
@@ -179,24 +179,25 @@
 @media (max-width:1200px ) {
     #codingexamplegrid {
         grid-template-columns: 1fr;
-        grid-row: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr auto;
     }
 
     #codeselect {
         grid-column: 1;
         grid-row: 1;
         font-size: small;
-        width: 75%;
+        width:100%;
     }
     #codeimage {
         grid-column: 1;
         grid-row: 2;
         width: 100%;
         background-size:contain;
+        background-position: bottom 50%;
 
     }
     #codedescription {
-        grid-row: 3;
+        grid-row: 3/ 3;
     }
 
 }

@@ -30,6 +30,6 @@ colorbutton.addEventListener('click', ()=> {
 
 resetbtn.addEventListener('click', () => {
     for (let i of snippets) {
-        i.style.backgroundColor = 'white';
+        i.style.backgroundColor = '#f0f0f0';
     }
 });
